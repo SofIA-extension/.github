@@ -1,7 +1,3 @@
-# 📘 Notes Structurées - Brainstorming Application Web
-
----
-
 ## 🔷 Vision Générale / Concept
 
 - INTERFACE QUI TRANSFORME LES SMART CONTRACT EN DONNEE LISIBLE ET CONSOMABLE PAR UN UTILISATEUR LAMBDA
