@@ -1,0 +1,35 @@
+## 🧠 Concepts Clés : Atom / Triplet / Signal
+
+### 🔹 Atom
+
+- Environnement contextuel (profil, intérêt, moment, lieu, etc.)
+- Sert à qualifier la pertinence d’une action ou d’un contenu
+- Unité fondamentale de connaissance dans le protocole Intuition.systems
+- Triplet enrichi de contexte :
+  - Sujet – Prédicat – Objet + métadonnées (auteur, temps, lieu, source, etc.)
+- **Structure** : nom / desc / date created / created by / picture / link
+- Atoms = identité / façon d’identifier
+- Créer des nouveaux atoms en fonction de la consommation ou l’utilisation de l’app
+- Liaison des trois atomes : *faire du ménage dans la maison*
+
+### 🔹 Triplet
+
+- Assertion composée de 3 éléments : Sujet – Prédicat – Objet
+- Exemple : `Maxime – aime – la musique électronique`
+- Données exprimées : factuelles, subjectives, personnelles
+- Peuvent être publiques, privées ou partagées
+- Utilisées pour construire la base de connaissance
+- Triple = composition de trois atoms pour une organisation sémantique
+
+### 🔹 Signal
+
+- Activation d’un ou plusieurs atoms dans un contexte donné
+- Associé à une intention : notification, recommandation, validation, action, etc.
+- Impact : déclenche une action, une recommandation, une certification
+- Unité monétisable du système
+- Signaux = votes, permettent de déposer de l’ETH en faveur ou non d’un triple
+
+> ✅ Les **signaux sont monétisés**  
+> ✅ Les **atoms/triplets sont gratuits à créer** mais prennent de la valeur lorsqu’activés sous forme de signal
+
+---
