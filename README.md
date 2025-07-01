@@ -1,8 +1,4 @@
-# 🧠 Documentation Technique – Projet Elysa OS / Intuition Systems
-
-Ce document est destiné aux développeurs membres de l’organisation. Il centralise les concepts, ressources, et choix techniques autour de l’écosystème **Elysa OS** et du protocole **Intuition.systems**.
-
----
+# 🧠 Documentation Technique
 
 ## 📌 Objectif du Projet
 
