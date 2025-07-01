@@ -50,6 +50,22 @@ Créer une **interface intelligente et décentralisée** permettant :
 
 ---
 
+##  1️⃣ ElizaOS = Cœur de la couche Orchestration
+Dans ton projet, ElizaOS jouera le rôle de :
+🎛️ Router de contexte : Il récupère tes Atoms, Triplets, Signaux et les reformate.
+🧠 Prompt Engine : Il prépare les prompts pour le LLM, en intégrant contexte + requête utilisateur.
+🔗 Pont entre tes LLM, ton backend Node et Intuition.system : Plus tard, tu pourras remplacer le LLM local par un agent Intuition pour la certification + micro-certification des flux.
+
+---
+
+🔗 2️⃣ Connexion API
+En pratique :
+Frontend React 👉 appelle ton backend Node
+Ton backend Node 👉 appelle ElizaOS
+ElizaOS 👉 appelle le LLM que tu veux (OpenAI, Ollama local, ou futur Intuition LLM).
+
+---
+
 ## 🔐 Authentification / Connexion Web3
 
 * Authentification via **Metamask** (cf. [wagmi.sh](https://wagmi.sh/react/getting-started))
@@ -126,3 +142,5 @@ Créer une **interface intelligente et décentralisée** permettant :
   * [masa.ai](https://www.masa.ai/)
   * [developer.shiza.ai](https://developer.shiza.ai/exchange)
   * [world.org](https://world.org/fr-fr)
+  * 
+
