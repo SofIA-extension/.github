@@ -1,0 +1,46 @@
+┌─────────────┐
+│ Utilisateur │
+└─────┬───────┘
+│
+│ Navigue sur le web
+▼
+┌───────────────┐
+│ Onglet Chrome │
+└─────┬─────────┘
+│
+│
+▼
+┌─────────────────────────────┐
+│ Content Script (facultatif) │  ← injecté dans la page
+│ - Récupère : titre, texte   │
+│ - Nettoie le contenu        │
+└─────┬───────────────────────┘
+│
+▼
+┌───────────────────────────────┐
+│ Background Script / Service   │
+│ Worker                        │
+│ - Écoute 
+tabs.onUpdated
+     │
+│ - Détecte URL, changements    │
+│ - Lance Content Script si besoin │
+│ - Structure les données       │
+└─────┬─────────────────────────┘
+│
+▼
+┌─────────────────────┐
+│ Stockage local      │
+│ 
+chrome.storage.*
+  │
+│ ou IndexedDB        │
+└─────┬───────────────┘
+│
+▼
+┌─────────────────────┐
+│ Popup / Dashboard   │
+│ - Affiche l'historique │
+│ - Permet d’activer/désactiver │
+│ - Exporter / supprimer │
+└─────────────────────┘
