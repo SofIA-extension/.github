@@ -1,0 +1,35 @@
+✅ A. Authentification via signature blockchain
+But : Vérifier que le wallet appartient bien à l’utilisateur.
+POST /auth/verify
+Input : { wallet_address, signature, message }
+Process : Vérifier signature (eth-sig-util ou ethers)
+Output : JWT / Session
+
+#✅ B. Sauvegarde Onboarding
+POST /onboarding/save
+Input : { user_id, answers: [ { question, answer } ] }
+Action : Créer Preferences ou enrichir Atoms
+Output : 200 OK
+
+#✅ C. Gestion Préférences
+GET /preferences
+Paramètres : user_id
+Output : Liste Preferences
+POST /preferences
+Body : { key, value }
+
+#✅ D. Récupération Suggestions
+GET /suggestions
+Paramètres : user_id
+Output : Suggestions filtrées par status
+POST /suggestions/update
+Body : { suggestion_id, status }
+
+#✅ E. Activité Cercle de confiance
+GET /trust-circle
+Paramètres : user_id
+Output : Liste membres + last_activity
+POST /trust-circle/invite
+Body : { owner_id, member_wallet_address }
+POST /trust-circle/activity
+Body : { user_id, activity_type, metadata }
