@@ -11,7 +11,7 @@
 
 Mais elle ne fait pas que t’assister :
 - Elle **structure, contextualise et certifie** ton identité numérique.
-- Grâce à l’infrastructure décentralisée d’[Intuition.systems](https://www.intuition.systems/), chaque interaction devient un **atom**, une unité de connaissance.
+- Grâce à l’infrastructure décentralisée d’[Intuition.systems](https://www.intuition.systems/), chaque interaction peut devenir un **atom**, une unité de connaissance.
 - Tu choisis si ces données restent **privées**, **partagées**, ou **ancrées on-chain**.
 
 🧭 **SOFIA** agit comme :
