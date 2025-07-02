@@ -1,0 +1,27 @@
+🧠 3️⃣ LLM + ElizaOS
+
+#✅ A. Définir connexion ElizaOS → LLM
+Si API externe (OpenAI, Ollama, Local LLM) :
+Créer un proxy backend : POST /chat
+Entrée : { user_id, message, context: { atoms, triplets, signal } }
+Lancer un stream si possible (SSE/WebSocket)
+
+#✅ B. Endpoint flux conversation
+POST /chat/stream
+Input : { message, context }
+Output : flux tokenisé (Streaming API)
+
+#✅ C. Gérer contexte Atoms/Triplets/Signaux
+À chaque message :
+Charger Atoms et Triplets liés au user_id
+Générer prompt dynamique :
+mdCopierModifierTu es ElizaOS.
+Contexte : [liste d’Atoms et Triplets]
+Question utilisateur : « … »
+Passer le prompt au LLM.
+
+#✅ D. Tester conversation dynamique
+Tester :
+Création auto d’Atomes après réponse
+Suggestions auto créées après échange
+Flux conversationnel fluide (streaming / sockets)
