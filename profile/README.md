@@ -1,137 +1,148 @@
+# 🧠 SOFIA — Your Personal AI Agent for the Web
 
-# 🧠 SOFIA — Agent IA Personnel pour le Web
-
-> **SOFIA** est une extension Chrome dopée à l’intelligence artificielle, pensée comme un agent personnel intelligent.
-
----
-
-## ✨ Présentation
-
-**SOFIA** t’accompagne dans ta navigation web, capte tes centres d’intérêt et les transforme en une **mémoire numérique vivante**, **sécurisée** et **vérifiable via la blockchain**.
-
-Mais elle ne fait pas que t’assister :
-- Elle **structure, contextualise et certifie** ton identité numérique.
-- Grâce à l’infrastructure décentralisée d’[Intuition.systems](https://www.intuition.systems/), chaque interaction peut devenir un **atom**, une unité de connaissance.
-- Tu choisis si ces données restent **privées**, **partagées**, ou **ancrées on-chain**.
-
-🧭 **SOFIA** agit comme :
-- Un **journal assisté**
-- Un **graphe personnel vivant**
-- Un **planificateur intelligent**
-- Un **filtre cognitif**
-- Un **complice éthique** de ta mémoire numérique
+> **SOFIA** is an AI-powered Chrome extension designed as a smart personal agent.
 
 ---
 
-## 🧰 Stack Technique
+## ✨ Overview
 
-| Élément        | Version       |
-|----------------|---------------|
-| Node.js        | v20.19.3      |
-| pnpm           | v10.8.2       |
-| Vite           | v7.0.0        |
-| Framework UI   | [Chakra UI](https://chakra-ui.com/) / [Shadcn UI](https://ui.shadcn.com/) |
-| Auth           | MetaMask / Wagmi |
-| API            | Google Maps, Intuition.systems |
-| Extension      | Chrome |
-| Web3           | Intégration on-chain via signaux/atoms/triplets |
-| Langage        | TypeScript    |
+**SOFIA** assists you during your web browsing, capturing your interests and transforming them into a **living digital memory**, **secure**, and **verifiable via blockchain**.
+
+But it's more than just an assistant:
+- It **structures, contextualizes, and certifies** your digital identity.
+- Thanks to the decentralized infrastructure of [Intuition.systems](https://www.intuition.systems/), every interaction can become an **atom**, a unit of knowledge.
+- You decide whether this data remains **private**, **shared**, or **anchored on-chain**.
+
+🧭 **SOFIA** acts as:
+- An **assisted journal**
+- A **living personal graph**
+- An **intelligent planner**
+- A **cognitive filter**
+- An **ethical accomplice** to your digital memory
 
 ---
 
-## 🗂️ Structure recommandée du dépôt
+## 🧰 Tech Stack
+
+| Component        | Version       |
+|------------------|---------------|
+| Node.js          | v20.19.3      |
+| pnpm             | v10.8.2       |
+| Vite             | v7.0.0        |
+| UI Framework     | [Chakra UI](https://chakra-ui.com/) / [Shadcn UI](https://ui.shadcn.com/) |
+| Auth             | MetaMask / Wagmi |
+| APIs             | Google Maps, Intuition.systems |
+| Extension        | Chrome |
+| Web3             | On-chain integration via signals/atoms/triplets |
+| Language         | TypeScript    |
+
+---
+
+## 🗂️ Recommended Repo Structure
 
 ```bash
 sofia/
-├── main             # Branche de production (stable)
-├── develop          # Branche de développement
-├── feature/         # Branches de fonctionnalités
+├── main             # Production branch (stable)
+├── develop          # Development branch
+├── feature/         # Feature branches
 │   ├── feature/chatbot
 │   ├── feature/onboarding
-├── bugfix/          # Branches de correction
-├── hotfix/          # Correctifs urgents en prod
-├── README.md        # Présentation du projet
-├── docs/            # Documentation complémentaire
-├── .github/         # Workflows CI/CD, templates d’issues/PR
-└── LICENSE          # Licence open source
-```
+├── bugfix/          # Bug fix branches
+├── hotfix/          # Urgent production fixes
+├── README.md        # Project overview
+├── docs/            # Additional documentation
+├── .github/         # CI/CD workflows, issue/PR templates
+└── LICENSE          # Open source license
 
----
+##🌳 Git Convention
 
-## 🌳 Convention Git
+###🛠 Branches
+main: production-ready version
 
-### 🛠 Branches
+develop: continuous development (tested but not production)
 
-- `main` : version en production
-- `develop` : branche de dev continue (version testée mais non prod)
-- `feature/xxx` : nouvelles fonctionnalités
-- `bugfix/xxx` : correction de bugs
-- `hotfix/xxx` : correctifs urgents en production
+feature/xxx: new features
 
-### 🔄 Workflow Git
+bugfix/xxx: bug fixes
 
-1. Développement sur `feature/xxx`
-2. Merge vers `develop` après tests
-3. Merge vers `main` pour release
-4. `hotfix/xxx` part de `main` et merge vers `main` + `develop`
+hotfix/xxx: urgent production fixes
 
-### 🔐 Protection des branches
+###🔄 Git Workflow
+Develop in feature/xxx
 
-> GitHub → Settings → Branches → Protection rules
+Merge into develop after testing
 
-- 🔒 Interdiction des push directs sur `main` et `develop`
-- ✅ Revue obligatoire via Pull Request
-- ✅ (Optionnel) Intégration continue obligatoire pour valider les PRs
+Merge into main for release
 
----
+hotfix/xxx branches from main and merges back into both main and develop
 
-## 🤝 Contribution
+##🔐 Branch Protection
+GitHub → Settings → Branches → Protection rules
 
-Avant de contribuer :
+🔒 No direct pushes to main and develop
 
-1. Fork le projet
-2. Crée une branche depuis `develop` :
-   ```bash
-   git checkout -b feature/nom-fonctionnalité
-   ```
-3. Push ta branche :
-   ```bash
-   git push origin feature/nom-fonctionnalité
-   ```
-4. Ouvre une Pull Request vers `develop`
+✅ Mandatory code reviews via Pull Requests
 
-Merci de respecter :
-- La convention de commit (`feat:`, `fix:`, `docs:`, etc.)
-- Les bonnes pratiques d'accessibilité et de lisibilité
-- Les standards TypeScript / Vite
+✅ (Optional) CI checks required for PR approval
 
----
+##🤝 Contributing
+Before contributing:
 
-## 📌 TODO (Roadmap Initiale)
+Fork the repository
 
-- [ ] Intégration complète avec Intuition.systems (atoms/triplets/signaux)
-- [ ] Interface de visualisation des centres d’intérêt
-- [ ] Fonction de journal assisté avec classification automatique
-- [ ] Détection automatique d’actions/contextes dans le navigateur
-- [ ] Mode privé / public pour chaque interaction
-- [ ] Onboarding UX avec personnalisation de l’agent IA
-- [ ] Détection de "moments à retenir"
-- [ ] Intégration Google Maps (activités à proximité)
-- [ ] Mécanisme de vote ou réaction aux triplets (signaux)
-- [ ] Interface Web3 / Wallet / ETH staking sur signaux
-- [ ] Version décentralisée des favoris, objectifs, rappels
+Create a branch from develop:
 
----
+bash
+Copier
+Modifier
+git checkout -b feature/your-feature-name
+Push your branch:
 
-## 🔗 Ressources externes
+bash
+Copier
+Modifier
+git push origin feature/your-feature-name
+Open a Pull Request to develop
 
-- Intuition System : [intuition-ts](https://github.com/0xIntuition/intuition-ts)
-- Eliza OS : [GitHub](https://github.com/elizaOS/eliza) – [Site](https://www.elizaos.ai/)
-- Extension Chrome : [Intuition Extension](https://github.com/0xIntuition/chrome-extension)
-- Metamask Auth : [wagmi.sh](https://wagmi.sh/react/getting-started)
+Please follow:
 
----
+Commit message convention (feat:, fix:, docs:, etc.)
 
-## ⚖️ Licence
+Accessibility and readability best practices
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](./LICENSE).
+TypeScript / Vite standards
+
+##📌 TODO (Initial Roadmap)
+ Full integration with Intuition.systems (atoms/triplets/signals)
+
+ Interface to visualize interests
+
+ Assisted journal feature with automatic classification
+
+ Automatic detection of actions/contexts in the browser
+
+ Private/public mode for each interaction
+
+ Onboarding UX with personalized AI agent setup
+
+ Detection of "memorable moments"
+
+ Google Maps integration (local activity insights)
+
+ Voting or reaction mechanism on triplets (signals)
+
+ Web3 interface / Wallet / ETH staking on signals
+
+ Decentralized version of bookmarks, goals, reminders
+
+##🔗 External Resources
+Intuition System: intuition-ts
+
+Eliza OS: GitHub – Website
+
+Chrome Extension: Intuition Extension
+
+Metamask Auth: wagmi.sh
+
+##⚖️ License
+This project is licensed under the MIT License. See LICENSE for details.
