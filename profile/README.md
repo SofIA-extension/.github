@@ -26,12 +26,12 @@ But it's more than just an assistant:
 
 | Component        | Version       |
 |------------------|---------------|
-| Node.js          | v20.19.3      |
+| Node.js          | v16.14        |
 | pnpm             | v10.8.2       |
-| Vite             | v7.0.0        |
-| UI Framework     | [Chakra UI](https://chakra-ui.com/) / [Shadcn UI](https://ui.shadcn.com/) |
+| Vite / Plasmo    | v7.0.0        |
+| UI Framework     | Figma / Spline|
 | Auth             | MetaMask / Wagmi |
-| APIs             | Google Maps, Intuition.systems |
+| APIs             | Google Maps, Intuition.systems, Facebook Events |
 | Extension        | Chrome |
 | Web3             | On-chain integration via signals/atoms/triplets |
 | Language         | TypeScript    |
