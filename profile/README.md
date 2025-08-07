@@ -16,7 +16,6 @@ But it's more than just an assistant:
 🧭 **SOFIA** acts as:
 - An **assisted journal**
 - A **living personal graph**
-- An **intelligent planner**
 - A **cognitive filter**
 - An **ethical accomplice** to your digital memory
 
